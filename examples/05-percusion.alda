@@ -1,0 +1,70 @@
+
+#C7 Chords and arpeggios
+(def TAB_1 1.0)
+(def TAB_2 2.3)
+(def TAB_3 3.2)
+(def TAB_4 4.3)
+(def TAB_5 5.1)
+(def TAB_6 6.0)
+
+taC7_Q = (c Q TAB_1 TAB_2 TAB_3 TAB_4 TAB_5 TAB_6 )
+taC7_H = (c H TAB_1 TAB_2 TAB_3 TAB_4 TAB_5 TAB_6 )
+taC7_W = (c W TAB_1 TAB_2 TAB_3 TAB_4 TAB_5 TAB_6 )
+taC7_D = (c D TAB_1 TAB_2 TAB_3 TAB_4 TAB_5 TAB_6 )
+
+taC7_ADQ = (t TAB_1 Q) (t TAB_2 Q) (t TAB_3 Q) (t TAB_4 Q) (t TAB_5 Q) (t TAB_6 Q)
+taC7_ADH = (t TAB_1 H) (t TAB_2 H) (t TAB_3 H) (t TAB_4 H) (t TAB_5 H) (t TAB_6 H)
+taC7_ADW = (t TAB_1 W) (t TAB_2 W) (t TAB_3 W) (t TAB_4 W) (t TAB_5 W) (t TAB_6 W)
+taC7_ADD = (t TAB_1 D) (t TAB_2 D) (t TAB_3 D) (t TAB_4 D) (t TAB_5 D) (t TAB_6 D)
+
+taC7_AUQ = (t TAB_6 Q) (t TAB_5 Q) (t TAB_4 Q) (t TAB_3 Q) (t TAB_2 Q) (t TAB_1 Q)
+taC7_AUH = (t TAB_6 H) (t TAB_5 H) (t TAB_4 H) (t TAB_3 H) (t TAB_2 H) (t TAB_1 H)
+taC7_AUW = (t TAB_6 W) (t TAB_5 W) (t TAB_4 W) (t TAB_3 W) (t TAB_2 W) (t TAB_1 W)
+taC7_AUD = (t TAB_6 D) (t TAB_5 D) (t TAB_4 D) (t TAB_3 D) (t TAB_2 D) (t TAB_1 D)
+
+
+(def TAB_1 1.0)
+(def TAB_2 0.0)
+(def TAB_3 3.0)
+(def TAB_4 4.2)
+(def TAB_5 5.1)
+(def TAB_6 6.2)
+
+
+taD7_Q = (c Q TAB_1 TAB_2 TAB_3 TAB_4 TAB_5 TAB_6 )
+taD7_H = (c H TAB_1 TAB_2 TAB_3 TAB_4 TAB_5 TAB_6 )
+taD7_W = (c W TAB_1 TAB_2 TAB_3 TAB_4 TAB_5 TAB_6 )
+taD7_D = (c D TAB_1 TAB_2 TAB_3 TAB_4 TAB_5 TAB_6 )
+
+taD7_ADQ = (t TAB_1 Q) (t TAB_2 Q) (t TAB_3 Q) (t TAB_4 Q) (t TAB_5 Q) (t TAB_6 Q)
+taD7_ADH = (t TAB_1 H) (t TAB_2 H) (t TAB_3 H) (t TAB_4 H) (t TAB_5 H) (t TAB_6 H)
+taD7_ADW = (t TAB_1 W) (t TAB_2 W) (t TAB_3 W) (t TAB_4 W) (t TAB_5 W) (t TAB_6 W)
+taD7_ADD = (t TAB_1 D) (t TAB_2 D) (t TAB_3 D) (t TAB_4 D) (t TAB_5 D) (t TAB_6 D)
+
+taD7_AUQ = (t TAB_6 Q) (t TAB_5 Q) (t TAB_4 Q) (t TAB_3 Q) (t TAB_2 Q) (t TAB_1 Q)
+taD7_AUH = (t TAB_6 H) (t TAB_5 H) (t TAB_4 H) (t TAB_3 H) (t TAB_2 H) (t TAB_1 H)
+taD7_AUW = (t TAB_6 W) (t TAB_5 W) (t TAB_4 W) (t TAB_3 W) (t TAB_2 W) (t TAB_1 W)
+taD7_AUD = (t TAB_6 D) (t TAB_5 D) (t TAB_4 D) (t TAB_3 D) (t TAB_2 D) (t TAB_1 D)
+
+
+(def beat (alda-code "o2 c+8"))
+
+(def pattern
+  (let [rest (pause (duration (note-length 8)))]
+    [beat beat (quant 50) beat rest beat beat rest (quant 90) beat rest (quant 100) beat beat rest]))
+
+(defn shift [n pattern]
+  (take (count pattern) (drop n (cycle pattern))))
+
+(tempo! 172)
+
+electric-guitar-overdrive: (panning (rand-int 80)) (vol 60) [taC7_ADH taD7_ADH (vol (rand-int 60)) taD7_ADH (vol 80)]*5
+electric-guitar-harmonics: (tempo 100) (panning 40) [taC7_ADH (panning (rand-int 80)) taD7_ADH taD7_ADH]*5
+midi-percussion:
+  V1:
+    (times 2
+      (times 2 pattern))
+
+  V2:
+    (for [n (range 5)]
+      (times 2 (shift n pattern)))

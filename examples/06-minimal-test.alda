@@ -1,0 +1,4 @@
+rif = ta10 ta11 ta12 ta13 ta13Q ta13Q ta13Q ta13Q ta13H ta13H ta13 ta12 ta11 ta10 e/g/b ta10D
+guitar: (tempo 80)  (panning 60) rif
+midi-acoustic-guitar-steel: (tempo 80) (panning 40) rif
+midi-banjo:  (tempo 160) [rif]*2

@@ -1,0 +1,35 @@
+
+(tempo! 190)
+
+CC = o3 e1 e- c+ <b> <a> <b> c+ <b>
+CA = (panning 80) o3 r2 g+/b r2 f+/b r2 g+/>c+< (quant 100) r2 g+/b r2 e/a r2 (quant 90) g+/b r2 a/>c+< r2 e-/b
+AA = (panning 4) o3 r2 g+8 b8 r2 f+8 b8 r2 g+8 >c+8<
+AB = (quant 80) o3 r4 g+ b (quant 90) g+ r f+ b f+ r g+ (quant 100)  >c+< (quant 90)  g+ r (quant 100) g+ b g+ r e a e r g+ b g+ r a >c+< a r e- b e-
+mel = o4 r4 e8 f+ g+4 b b2 f+ r4 e8 f+ g+4 f+8 e g+4 f+8 e e-2 r4 c+8 e- e4 e-8 c+ <b4> e g+2 r4 f+8 g+ a4 f+ e2 e-
+lastvoice = [r1]*32 o5 %end (panning 40) (volume 80)  g+2 g+8 a g+4 f+4 e- < b > f+ e f+ g+ e e- < b g+2 a4 b > c+ e- e f+ g+ e g+2 g+8 a g+4 f+2 b %guitar2 g+2. f+8 e e-4  < b g+ > e- c+ e- e c+ < b a g+2 f+4 g+ a b > c+ e- e f+ g+ a g+ e f+ g+ f+ e- e2 > e e-4 < b g+ > e- c+ e- e c+ < b a g+2 f+4 e e- f+ e %cello e- c+ e g+ e <b> g+ f+ e- <b> f+ e4 f+ g+ a f+ e- <b> f+ e e- c+ e e- < b g+2 f+4 g+ a f+ g+ a b g+ a b > c+ e- e2 e-
+
+cello:(panning 80) CC*12 e1/g+/b/>e<
+
+midi-electric-guitar-overdrive: (panning 70) (vol 40) o4 e-1 e2 g+8.. (vol 60)  f+2 >e <e-4.
+>g+1.. (vol 100)  f+8 e e-4. f+8 e e-4.. e1
+
+violin "ch3": [r1]*16 mel*2 (vol 75) mel*4 (vol 100) mel*2
+midi-fiddle: [r1]*32 o4 g+2 g+8 a g+4 f+4 e- < b > f+ e f+ g+ e e- < b g+2 a4 b > c+ e- e f+ g+
+e g+2 g+8 a  g+4 f+2 b %introGuitar g+2. f+8 e e-4 %introGuitar  < b g+ > e- c+ e- e c+ < b a g+2
+f+4 g+ a b > c+ e- e f+ g+ a g+ e f+ g+ f+ e- e2 > e e-4 < b g+ > e- c+ e- e c+ < b a g+2 f+4 e
+e- f+ e e- c+ e g+ e <b> g+ f+ e- <b> f+ e4 f+ g+ a f+ e- <b> f+ e e- c+ e e- < b g+2 f+4 g+ a f+ g+ a
+b g+ a b > c+ e- e2 e-
+
+midi-electric-guitar-overdrive: @introGuitar (volume 100) (panning 80) o4 >e-1 e2 g+8.. f+2 e <e-4.
+ >g+1.. f+8 e e-4. >f+8< e e-4.. e1
+
+midi-fiddle: lastvoice
+
+midi-electric-guitar-overdrive: @guitar2 (panning 70) (vol 40) o4 e-1 e2 g+8.. (vol 60)  f+2 >e <e-4.
+>g+1.. (vol 100)  f+8 e e-4. f+8 e e-4.. e1
+
+acoustic-guitar "acoustic1": [r1]*8 CA*7 (vol 75) AB*3
+piano "acoustic2": [r1]*8 AA*7 (vol 75)
+
+midi-acoustic-grand-piano: @end  AA*2 (vol 75)
+midi-synth-pad-choir: @end AA*2 (vol 75)
