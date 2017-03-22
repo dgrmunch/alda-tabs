@@ -29,7 +29,7 @@ fi
 
 echo '  *  SciArt Alda Libs have been imported.'
 echo ''
-cat lib/sciartlab-lib.clj >> tmp/composed.alda
+cat lib/sciartlab-lib.alda >> tmp/composed.alda
 
 echo '  *  "ta syntax" support has been added.'
 echo ''
