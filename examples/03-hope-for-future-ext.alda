@@ -1,3 +1,8 @@
+#  ---- Hope for the Future ----
+# ******* LANGUAGE: ALDA ********
+# This work is based in the piano song composed by Ely Golden (30 January 2017)
+# To play the initial version check the example 04-hope-for-future-original.alda
+# Author of current version: Diego Gonzalez (xmunch@xmunch.com)
 
 (tempo! 190)
 
