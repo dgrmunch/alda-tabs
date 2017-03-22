@@ -40,7 +40,7 @@ echo '  *  The score ['$1'] is gonna be processed.'
 echo ''
 cat $1 >> tmp/composed.alda
 
-echo '  *  Executing Alda with SciArt Lab Extension'
+echo '  *  Executing Aldatabs (Alda with SciArt Lab Extension)'
 echo ''
 
 alda play -f tmp/composed.alda
