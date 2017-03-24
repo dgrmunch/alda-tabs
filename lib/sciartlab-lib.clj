@@ -35,8 +35,6 @@
           (if (= string 5) (str "o2 a" (extra-semitones fret))
             (if (= string 6) (str "o2 e" (extra-semitones fret)) (str "r"))))))))
 
-
-
 (defn tab-str
   "given a tab-note it returns a note in Alda syntax as a string"
   [string-fret & [duration]]
