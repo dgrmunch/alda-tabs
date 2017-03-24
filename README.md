@@ -81,7 +81,7 @@ Remember that *alda-tabs* is based in the simple concept of a tab. Basically, th
 ![alt tag](https://raw.githubusercontent.com/dgrmunch/alda-tabs/master/img/notes-fret.png)
 
 To write a note in *alda-tabs* you only have to write `ta` followed by the `string number` and the `fret number`.
-In other words, we can write with *alda-tabs* the sequence that we have previously expressed in Alda, but this time we don't need to know which note we are playing, just the position of our finger:
+In other words, we can write with *alda-tabs* the sequence that we have previously expressed in Alda. But this time we don't need to know which note we are playing, we only need to write the *tab*, the position of our finger considering the *string* and the *fret*:
 
 ```
  guitar: ta10 ta20 ta30 ta40 ta50 ta60
