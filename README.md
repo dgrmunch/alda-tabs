@@ -12,7 +12,7 @@
 
 ## What is Alda?
 
-Alda is a programming language for music composition in the JVM and *alda-tabs* is built on the top of it.
+*alda-tabs* is built on the top of Alda, a programming language for music composition in the JVM.
 
 ## Is difficult to learn to code guitar songs with alda-tabs?
 
