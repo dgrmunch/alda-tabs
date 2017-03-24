@@ -1,6 +1,6 @@
 # alda-tabs
 
-**Execute your guitar tabs in the Java Virtual Machine**
+**Execute your guitar tabs in the Java Virtual Machine (JVM)**
 
 ![alt tag](https://raw.githubusercontent.com/dgrmunch/alda-tabs/master/img/alda-tabs.png)
 
@@ -12,7 +12,7 @@
 
 ## What is Alda?
 
-Alda is a programming language for music composition in the JVM. *alda-tabs* is built on the top of it.
+Alda is a programming language for music composition in the JVM and *alda-tabs* is built on the top of it.
 
 ## Is difficult to learn to code guitar songs with alda-tabs?
 
