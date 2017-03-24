@@ -55,6 +55,7 @@ Imagine that you want to play all the strings of the guitar, one after another:
 ![alt tag](https://raw.githubusercontent.com/dgrmunch/alda-tabs/master/img/score1.png)
 
 For this example, no fingers are pressed on the fret.
+
 **So the fret number would be `0` in the six positions of the sequence.**
 
 ### How do we write this in Alda?
