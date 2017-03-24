@@ -1,32 +1,38 @@
 CH1 = (c 2 3 2 0 x x W)
 CH2 = (c x x 4 3 2 0 W)
 
-guitar:
+guitar: (c 2 3 2 0 x x W)
 
-#o4 e
-#o3 b
-#o3 g
-#o3 d
-#o2 a
-#o2 e
+# Vextab syntax notes 0/1 0/2 0/3 0/4 0/5 0/6
 
-(c 0 x 0 x x x W)
+# Alda syntax
+o4 e o3 b o3 g o3 d o2 a o2 e
+
+# alta-tab syntax
+
+ta10 ta20 ta30 ta40 ta50 ta60
+
+t(1.0 10ms)
+# Alda syntax
+o4 e/>b/g/d/<<a/e
+
+# alta-tab syntax
+
+V1: ta10 V2: ta20 V3: ta30 V4: ta40 V5: ta50 V6: ta60
+
+# alda-tab chord syntax
+
+(c 0 0 0 0 0 0 W)
+
+
+# alta-tab syntax
+
+ta10 ta20 ta30 ta40 ta50 ta60
+
+# alda-tab chord syntax
+(c 0 x x x x x W)
 (c x 0 x x x x W)
-(c x x 0 x 0 x W)
-(c x x x 0 x 0 W)
-(c x x 0 x 0 x W)
-(c x 0 x x x 0 W)
-
-(c 1 x x x x x W)
-(c x 1 x x x x W)
-(c x x 1 x x x W)
-(c x x x 1 x x W)
-(c x x x x 1 x W)
-(c x x x x x 1 W)
-
-(c 1 2 x x x x W)
-(c x 1 2 x x x W)
-(c x x 1 2 x x W)
-(c x x x 1 2 x W)
-(c x x x x 1 2 W)
-(c x x x x x 1 W)
+(c x x 0 x x x W)
+(c x x x 0 x x W)
+(c x x x x 0 x W)
+(c x x x x x 0 W)
