@@ -1,17 +1,11 @@
+#C7 Chords
+taC7_Q = (c 0 3 2 3 1 0 Q) #chord (quarter duration)
+taC7_H = (c 0 3 2 3 1 0 H) #chord (half duration)
 
-#C7 Chords and arpeggios
-(def TAB_1 1.0)
-(def TAB_2 2.3)
-(def TAB_3 3.2)
-(def TAB_4 4.3)
-(def TAB_5 5.1)
-(def TAB_6 6.0)
-
-taC7_Q = (c Q TAB_1 TAB_2 TAB_3 TAB_4 TAB_5 TAB_6 ) 
-taC7_H = (c H TAB_1 TAB_2 TAB_3 TAB_4 TAB_5 TAB_6 )
-taC7_ADH = (t TAB_1 H) (t TAB_2 H) (t TAB_3 H) (t TAB_4 H) (t TAB_5 H) (t TAB_6 H)
-taC7_AUH = (t TAB_6 H) (t TAB_5 H) (t TAB_4 H) (t TAB_3 H) (t TAB_2 H) (t TAB_1 H)
-taC7_AUQ = (t TAB_6 Q) (t TAB_5 Q) (t TAB_4 Q) (t TAB_3 Q) (t TAB_2 Q) (t TAB_1 Q)
+#C7 Arpeggios
+taC7_ADH = ta10H ta23H ta32H ta43H ta51H ta60H #down arpeggio (half duration)
+taC7_AUH = ta60H ta51H ta43H ta32H ta23H ta10H #up arpeggio (half duration)
+taC7_AUQ = ta60Q ta51Q ta43Q ta32Q ta23Q ta10Q #up arpeggio (quarter duration)
 
 chords =   [taC7_ADH taC7_Q %solo ]*4 taC7_AUH
 rif = (panning 80) [ta10 ta23 ta32 (panning 50) ta43 ta51 ta60 (panning 30)]*2
