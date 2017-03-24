@@ -1,3 +1,21 @@
+(comment
+ *------------------------------------------------------------------------------*
+ |                                                                              |
+ |   ███████╗ ██████╗██╗ █████╗ ██████╗ ████████╗    ██╗      █████╗ ██████╗    |
+ |   ██╔════╝██╔════╝██║██╔══██╗██╔══██╗╚══██╔══╝    ██║     ██╔══██╗██╔══██╗   |
+ |   ███████╗██║     ██║███████║██████╔╝   ██║       ██║     ███████║██████╔╝   |
+ |   ╚════██║██║     ██║██╔══██║██╔══██╗   ██║       ██║     ██╔══██║██╔══██╗   |
+ |   ███████║╚██████╗██║██║  ██║██║  ██║   ██║       ███████╗██║  ██║██████╔╝   |
+ |   ╚══════╝ ╚═════╝╚═╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝       ╚══════╝╚═╝  ╚═╝╚═════╝    |
+ |                                                                              |
+ |                 Author     Diego Gonzalez Rodriguez                          |
+ |                 Email      xmunch@xmunch.com                                 |
+ |                 Website    http://www.xmunch.com                             |
+ |                 Lab        http://www.sciartlab.com                          |
+ |                 Library    Guitar tabs for Alda                              |
+ |                                                                              |
+ *------------------------------------------------------------------------------*)
+
 (require '[clojure.string :as stri])
 
 (def Q 16) (def H 8) (def W 4) (def D 2) (def x "x")
@@ -10,6 +28,7 @@
 (defn guitar-note
   "given a string and a fret number it returns a note in Alda syntax"
   [string fret]
+  (println string)
   (if (= string 1) (str "o4 e" (extra-semitones fret))
     (if (= string 2) (str "o3 b" (extra-semitones fret))
       (if (= string 3) (str "o3 g" (extra-semitones fret))
@@ -29,18 +48,20 @@
 
 (defn chord-str
   "given a list of tab-notes and a duration it executes a chord of Alda notes"
-  [duration one two three four five six]
+  [one two three four five six duration]
 
-  (if (.contains (str one)    "x")  (def one    "x")   (def one    (str   "1." one)))
-  (if (.contains (str two)    "x")  (def two    "x")   (def two    (str   "2." two)))
-  (if (.contains (str three)  "x")  (def three  "x")   (def three  (str   "3." three)))
-  (if (.contains (str four)   "x")  (def four   "x")   (def four   (str   "4." four)))
-  (if (.contains (str five)   "x")  (def five   "x")   (def five   (str   "5." five)))
-  (if (.contains (str six)    "x")  (def six    "x")   (def six    (str   "6." six))))
+  (if (.contains (str one)    "x")  (def one-var    "x")   (def one-var    (str   "1" "." one)))
+  (if (.contains (str two)    "x")  (def two-var    "x")   (def two-var    (str   "2"  "." two)))
+  (if (.contains (str three)  "x")  (def three-var  "x")   (def three-var  (str   "3" "." three)))
+  (if (.contains (str four)   "x")  (def four-var   "x")   (def four-var   (str   "4" "." four)))
+  (if (.contains (str five)   "x")  (def five-var   "x")   (def five-var   (str   "5" "." five)))
+  (if (.contains (str six)    "x")  (def six-var    "x")   (def six-var    (str   "6" "." six)))
 
-   (str   "V1: " (tab-str one duration)    " V2: " (tab-str two duration)
-                    " V3: " (tab-str three duration)  " V4: " (tab-str four duration)
-                    " V5:" (tab-str five duration)    " V6: " (tab-str six duration) " ")
+  (str   "V1: " (tab-str one-var duration)    " V2: " (tab-str two-var duration)
+                   " V3: " (tab-str three duration)  " V4: " (tab-str four-var duration)
+                   " V5: " (tab-str five duration)    " V6: " (tab-str six-var duration) " "))
 
 
-(c Q 3 x x x x x)
+(chord-str x x x x 0 x W)
+(chord-str x x x 0 x x W)
+(chord-str x x 0 x x x W)
