@@ -56,7 +56,7 @@ Imagine that you want to play all the strings of the guitar, one after another:
 
 We call this *open strings*, that is, no fingers are pressed on the fret. *So the fret number is 0 in the four positions*
 
-###How do we write this in Alda?
+### How do we write this in Alda?
 
 1. We can write the octave and the note, one after another:
 
@@ -70,7 +70,7 @@ guitar: o4 e o3 b o3 g o3 d o2 a o2 e
 guitar: o4 e/>b/g/d/<<a/e
 ```
 
-###How to do it in alda-tabs?
+### How to do it in alda-tabs?
 
 Remember that *alda-tabs* is based in the simple concept of a tab. Basically, the notes of a guitar can be defined by numeric combinations, a number to identify the string (from the first at the bottom to the sixth at the top) and a fret:
 
@@ -126,7 +126,10 @@ guitar: o4 e/>b/g/d/<<a/e
 
 * In *alta-tabs* syntax, using the *tab notation* with different voices:
 
+```
 guitar: V1: ta10 V2: ta20 V3: ta30 V4: ta40 V5: ta50 V6: ta60
+
+```
 
 * In *alta-tabs* syntax, but using the **chord notation**:
 
