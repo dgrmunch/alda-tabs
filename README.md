@@ -110,6 +110,8 @@ What does it mean? If you don't specify a duration, this will be whole beat (W).
 guitar: a21 a21W a21Q a21D a21H
 ```
 
+and:
+
 ```
 (tempo 300)
 guitar: a21 a21W a21Q a21D a21H
