@@ -2,6 +2,8 @@
 
 **Execute your guitar tabs in the Java Virtual Machine**
 
+![alt tag](https://raw.githubusercontent.com/dgrmunch/alda-tabs/master/img/alda-tabs.png)
+
 ## What is alda-tabs?
 
 * *alda-tabs* is a programming language for guitar players.
