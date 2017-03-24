@@ -6,7 +6,7 @@
 
 ## What is alda-tabs?
 
-* *alda-tabs* is a programming language for guitar players.
+* *alda-tabs* is a Domain Specific Language for guitar players.
 * *alda-tabs* is an extension of Alda to help guitar players to "execute" their music notes in the JVM and get audio feedback.
 * *alda-tabs* is an extensible tool for music programming mainly oriented to guitar players.
 
