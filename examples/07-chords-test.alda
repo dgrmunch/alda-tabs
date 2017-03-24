@@ -1,3 +1,32 @@
-guitar: (tempo 100)
+CH1 = (c 2 3 2 0 x x W)
+CH2 = (c x x 4 3 2 0 W)
 
-(c W x x x x x 0) ta60
+guitar:
+
+#o4 e
+#o3 b
+#o3 g
+#o3 d
+#o2 a
+#o2 e
+
+(c 0 x 0 x x x W)
+(c x 0 x x x x W)
+(c x x 0 x 0 x W)
+(c x x x 0 x 0 W)
+(c x x 0 x 0 x W)
+(c x 0 x x x 0 W)
+
+(c 1 x x x x x W)
+(c x 1 x x x x W)
+(c x x 1 x x x W)
+(c x x x 1 x x W)
+(c x x x x 1 x W)
+(c x x x x x 1 W)
+
+(c 1 2 x x x x W)
+(c x 1 2 x x x W)
+(c x x 1 2 x x W)
+(c x x x 1 2 x W)
+(c x x x x 1 2 W)
+(c x x x x x 1 W)
