@@ -45,7 +45,7 @@ What I am gonna show you here is the easy and super simple *alda-tabs* syntax:
 * The **tab notation**
 * The **chord notation**
 
-In 10 minutes you will be able to write songs in a text editor.
+In 10 minutes you will be able to write songs in a text editor and listen the result in your speakers.
 
 
 # Tab notation
