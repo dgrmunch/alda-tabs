@@ -76,19 +76,22 @@ guitar: o4 e/>b/g/d/<<a/e
 
 ### How to do it in alda-tabs?
 
-Remember that *alda-tabs* is based in the simple concept of a tab. Basically, the notes of a guitar can be defined by numeric combinations, a number to identify the string (from the first at the bottom to the sixth at the top) and a fret:
-
-![alt tag](https://raw.githubusercontent.com/dgrmunch/alda-tabs/master/img/notes-fret.png)
+Remember that *alda-tabs* is based in the simple concept of a tab. Basically, the notes of a guitar can be defined by numeric combinations, a number to identify the string (from the first at the bottom to the sixth at the top) and a fret.
 
 To write a note in *alda-tabs* you only have to write `ta` followed by the `string number` and the `fret number`.
-In other words, we can write with *alda-tabs* the sequence that we have previously expressed in Alda. But this time we don't need to know which note we are playing, we only need to write the *tab*, the position of our finger considering the *string* and the *fret*:
+In other words, with *alda-tabs* we can write the same sequence that we have previously expressed in Alda. But this time we don't need to know which note we are playing, we only need to write the *tab*, the position of our finger considering the *string* and the *fret*:
 
 ```
  guitar: ta10 ta20 ta30 ta40 ta50 ta60
   ```
 
 Basically, you are asking the JMV to play a guitar with the open strings 1, 2, 3, 4, 5 and 6, one after another.
-If rather than playing that sequence you want to play the note *C*, according to the graphic displayed above, you will pick the second string in the first fret.
+
+Take a look now of the fretboard:
+
+![alt tag](https://raw.githubusercontent.com/dgrmunch/alda-tabs/master/img/notes-fret.png)
+
+If you want to play the first note *C*, according to the graphic displayed above, you don't need to know the octave, you just will pick the second string in the first fret: `2` and `1`.
 
 ```
  guitar: a21
