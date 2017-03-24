@@ -38,14 +38,14 @@ No.
 
 ## How is the alda-tabs syntax?
 
-Remember that with **alda-tabs** you can always use the standard Alda syntax and Clojure code.
-You can learn more about both languages online. If you already know Alda, you only will have to learn a couple of new things and that is all.
-What I am gonna show you here is the easy and simple *alda-tab* syntax:
+*Note:* Remember that with **alda-tabs** you can always use the standard Alda syntax and Clojure code. You can learn more about both languages later if you are not used to them and want to explore the whole potential of *alda-tabs*. But you don't need it to start using *alda-tabs.
+
+what I am gonna show you here is the easy and super simple *alda-tabs* syntax:
 
 * The **tab notation**
 * The **chord notation**
 
-They are super easy to use, but I want to give you a little bit of context to show you how to do it.
+In 10 minutes you will be able to write songs in a text editor, but I want to give you a little bit of context to show you how to do it.
 
 
 # Tab notation
