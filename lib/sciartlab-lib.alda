@@ -74,3 +74,11 @@
   [one two three four five six duration]
     (alda-code  (chord-str one two three four five six duration))
 )
+
+(defn replace-map
+            "given an input string and a hash-map, returns a new string with all
+            keys in map found in input replaced with the value of the key"
+            [s m]
+            (clojure.string/replace s
+                        (re-pattern (apply str (interpose "|" (map #(java.util.regex.Pattern/quote %) (keys m)))))
+                    m))
