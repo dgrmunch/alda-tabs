@@ -146,7 +146,7 @@ guitar: (c 0 0 0 0 0 0 W)
 
 ```
 
-As you can see, the chord syntax is a Clojure function called *c* with seven parameters, the fret of each one of the six strings and the duration of the chord.
+As you can see, the chord notation is just a Clojure function *c* with seven parameters, the fret of each one of the six strings and the duration of the chord.
 
 For example, the D chord would be
 
