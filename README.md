@@ -38,7 +38,7 @@ No.
 
 ## How is the alda-tabs syntax?
 
-*Note:* Remember that with **alda-tabs** you can always use the standard Alda syntax and Clojure code. You can learn more about both languages later to explore the whole potential of *alda-tabs*. But you don't need it to start using *alda-tabs.
+**Note:** Remember that with **alda-tabs** you can always use the standard Alda syntax and Clojure code. You can learn more about both languages later to explore the whole potential of *alda-tabs*. But you don't need it to start using *alda-tabs.
 
 what I am gonna show you here is the easy and super simple *alda-tabs* syntax:
 
