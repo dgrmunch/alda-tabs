@@ -103,14 +103,13 @@ You can also modify the duration of a note adding a character at the end. For ex
 guitar: a21 a21W a21Q a21D a21H
 ```
 
-What does it mean? If you don't specify a duration, this will be whole beat (W). You can also play the note during half beat (H), double (D) and quarter (Q). Those note durations will be proportional to the tempo of the score. So it is not the same:
+What does it mean? If you don't specify a duration, this will be whole beat (W). You can also play the note during half beat (H), double (D) and quarter (Q). Those note durations will be proportional to the tempo of the score.
+For example, the following two sentences are not the same:
 
 ```
 (tempo 100)
 guitar: a21 a21W a21Q a21D a21H
 ```
-
-and:
 
 ```
 (tempo 300)
