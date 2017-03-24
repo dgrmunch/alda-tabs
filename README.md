@@ -85,7 +85,7 @@ In other words, with *alda-tabs* we can write the same sequence that we have pre
  guitar: ta10 ta20 ta30 ta40 ta50 ta60
   ```
 
-Basically, you are asking the JMV to play a guitar with the open strings 1, 2, 3, 4, 5 and 6, one after another.
+Basically, we are asking the JMV to play a guitar with the open strings 1, 2, 3, 4, 5 and 6, one after another.
 
 Take a look now of the fretboard:
 
