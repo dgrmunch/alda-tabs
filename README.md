@@ -58,15 +58,17 @@ In this example, no fingers are pressed on the fret.
 
 **So the fret number would be `0` in the six positions of the sequence.**
 
-### How do we write this in Alda?
+### How would we write this in Alda?
 
-1. We can write the octave and the note, one after another:
+We would need to know the note equivalents of each position and:
+
+1. We would write the octave and the note, one after another:
 
 ```
 guitar: o4 e o3 b o3 g o3 d o2 a o2 e
 ```
 
-2. We can write just the initial octave and increasing/decreasing it when it is needed:
+2. Or we would write just the initial octave increasing/decreasing it when needed:
 
 ```
 guitar: o4 e/>b/g/d/<<a/e
