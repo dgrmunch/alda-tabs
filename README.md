@@ -189,7 +189,7 @@ ta10 ta20 ta30 ta40 ta50 ta60
 
 ## How can I install alta-tabs?
 
-1. Follow the steps to install Alda.
+1. Follow the [steps to install Alda](https://github.com/alda-lang/alda).
 2. Clone this repo and open the folder `alda-tabs` in your terminal.
 3. Run the Alda server:
 
