@@ -94,13 +94,13 @@ Take a look now of the fretboard:
 If you want to play the first note *C*, according to the graphic displayed above, you don't need to know the octave, you just will pick the second string in the first fret: `2` and `1`.
 
 ```
- guitar: a21
+ guitar: ta21
  ```
 
 You can also modify the duration of a note adding a character at the end. For example:
 
 ```
-guitar: a21 a21W a21Q a21D a21H
+guitar: ta21 ta21W ta21Q ta21D ta21H
 ```
 
 What does it mean? If you don't specify a duration, this will be whole beat (W). You can also play the note during half beat (H), double (D) and quarter (Q). Those note durations will be proportional to the tempo of the score.
@@ -108,12 +108,12 @@ For example, the following two sentences are not the same:
 
 ```
 (tempo 100)
-guitar: a21 a21W a21Q a21D a21H
+guitar: ta21 ta21W ta21Q ta21D ta21H
 ```
 
 ```
 (tempo 300)
-guitar: a21 a21W a21Q a21D a21H
+guitar: ta21 ta21W ta21Q ta21D ta21H
 ```
 
 *Play with this combinations to see the difference*. For more complex timing, check the *advanced tips* bellow.
