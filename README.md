@@ -200,7 +200,7 @@ ta10 ta20 ta30 ta40 ta50 ta60
 6. Listen
 7. If you want to stop a song you can stop the alda server with `alda down`.
 
-**NOTE:** You can also play some scores (provided in the ``/examples` folder) and modify their content to explore different sounds.
+**NOTE:** You can also play some scores (provided in the `/examples` folder) and modify their content to explore different sounds.
 You can start exploring the potential of *alda-tabs* with chords and arpeggios with the example #01:
 
 ```./alda-tabs.sh examples/01-guitartabs-example.alda ```
