@@ -2,7 +2,6 @@
 alda-tabs
 ---------
 
-include::content.adoc[]
 *Execute your guitar tabs in the Java Virtual Machine (JVM)*
 
 image:https://raw.githubusercontent.com/dgrmunch/alda-tabs/master/img/alda-tabs.png[alt
@@ -18,4 +17,6 @@ What is alda-tabs?
 * _alda-tabs_ is an extensible tool for music programming mainly
 oriented to guitar players.
 
-Learn more here: https://dgrmunch.github.io/blog/blog/2017/alda-tabs.html
+== Read more here: 
+
+https://dgrmunch.github.io/blog/blog/2017/alda-tabs.html
